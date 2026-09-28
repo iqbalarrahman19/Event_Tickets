@@ -95,3 +95,37 @@ Menambahkan upload gambar untuk event.
 Menambahkan sistem pembayaran tiket.
 Meningkatkan desain UI agar lebih responsif dan interaktif.
 ```
+
+Teknologi
+Frontend
+Next.js
+React
+TypeScript
+Tailwind CSS
+Backend
+Node.js
+Express
+TypeScript
+Database
+PostgreSQL
+Tantangan & Cara Penyelesaian
+
+Beberapa tantangan yang ditemukan dalam proses pembuatan aplikasi antara lain:
+
+Menghubungkan frontend dengan REST API pada backend.
+Mengelola relasi antara data event dan tiket.
+Melakukan validasi input pada proses pembuatan event dan pemesanan tiket.
+Menangani event yang sudah melewati tanggal pelaksanaan agar tidak dapat dipesan.
+Menampilkan feedback kepada pengguna menggunakan alert dan confirmation modal.
+Mengurutkan dan menampilkan statistik jumlah tiket berdasarkan event.
+Improvement Jika Ada Waktu
+
+Beberapa pengembangan yang dapat dilakukan selanjutnya:
+
+Menambahkan sistem autentikasi dan authorization.
+Menambahkan pagination pada daftar event dan tiket.
+Menambahkan fitur pencarian event.
+Menambahkan dashboard statistik yang lebih lengkap.
+Menambahkan upload gambar untuk event.
+Menambahkan sistem pembayaran tiket.
+Meningkatkan desain UI agar lebih responsif dan interaktif.
