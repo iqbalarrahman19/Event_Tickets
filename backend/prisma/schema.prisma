@@ -1,0 +1,37 @@
+generator client {
+  provider = "prisma-client"
+  output   = "../src/generated/prisma"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+model Event {
+  id          String   @id @default(uuid())
+  publicId    Int      @unique @default(autoincrement())
+  title       String
+  description String
+  location    String
+  eventDate   DateTime
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  tickets Ticket[]
+
+  @@map("events")
+}
+
+model Ticket {
+  id            String   @id @default(uuid())
+  publicId      Int      @unique @default(autoincrement())
+  eventId       String
+  customerName  String
+  customerEmail String
+  quantity      Int
+  createdAt     DateTime @default(now())
+
+  event Event @relation(fields: [eventId], references: [id], onDelete: Cascade, onUpdate: Cascade)
+
+  @@map("tickets")
+}
